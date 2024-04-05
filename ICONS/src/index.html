@@ -14,7 +14,9 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
   <!-- Vendor CSS Files -->
   <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,6 +25,9 @@
   <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
@@ -36,6 +41,7 @@
 </head>
 
 <body>
+  
 <!-- Preloader -->
 <div class="loader-container">
   <div class="loader loader-white">
@@ -88,7 +94,7 @@
 
       <div class="logo">       
         <!-- Uncomment below if you prefer to use an image logo -->
-         <a href="index.html"><img src="../assets/img/logo2.png" alt="" class="img-fluid w-500"></a>
+         <a href="index.html"><img src="../assets/img/logo2.png" alt="" class="img-fluid w-00"></a>
       </div>
 
       <nav id="navbar" class="navbar">
@@ -107,12 +113,13 @@
           <li><a class="nav-link " href="team.html">Team</a></li>
           
           <li><a class="nav-link " href="contact.html">Contact</a></li>
-          <li><a class="getstarted " href="login.html">Get Started</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
+        
       </nav><!-- .navbar -->
 
     </div>
+    
   </header><!-- End Header -->
 
    <!-- Hero Section  -->
@@ -122,16 +129,25 @@
       <div class="row justify-content-between">
         <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
           <div class="data-aos">
-            <h1>"Icons South Luzon: Where Ideas Thrive"</h1>
-            <h2>
-              "Fueling Innovation, Igniting Success"</h2>
-            <div class="text-center text-lg-start">
-              <a href="login.html" class="btn-get-started scrollto">Get Started</a>
-            </div>
+            <h1>ICONS SOUTH LUZON <div class="roller">
+              <span id="rolltext">Innovative.<br/>
+                Transformative.<br/>
+               Collaborative.<br/>
+              <span id="spare-time">Fueling innovation and growth.</span><br/>
+              </div>
+              </h1>
+              <button class="learn-more" onclick="scrollToAbout()">
+                <span class="circle" aria-hidden="true">
+                  <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Get Started</span>
+              </button>
+              
+              
           </div>
         </div>
         <div class="col-lg-5 order-1 order-lg-2 hero-img"  data-aos="zoom-out" data-aos-delay="300">
-          <img src="../assets/img/bannnne.png" class="img-fluid animated" style="width: 100%; height: auto;" alt="">
+          <img src="../assets/img/bannnne.png" class="img-fluid animated" style="width: 400%; height:200px auto;" alt="">
       </div>
       
       </div>
@@ -177,32 +193,38 @@
                       <h5 class="text-check"><i class="fa fa-solid fa-award text-warning me-3"></i>Incubating Success</h5>
                   </div>
               </div>
-              <a href="about.html" class="text-button py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.2s" style="background-color:#F6A20E; color: white; border-radius: 30px;">Learn More</a>
-          </div>
-          <div class="col-lg-5" style="min-height: 300px;">
-              <div class="position-relative h-100">
-                  <img class="position-absolute w-100 h-100 rounded wow zoomIn img-hover-effect" data-wow-delay="0.2s" src="../assets/img/gallery/media8.jpg" style="object-fit: cover;">
+              
+              <div id="button-container">
+                <button class="primary-button">
+                 Learn More
+                  <span class="round"></span>
+                </button>
               </div>
+          </div>
+          <div class="col-lg-5" style="min-height: 500px;">
+            <div class="position-relative h-100">
+
+                <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.2s" src="../assets/img/gallery/media12.jpg"class="img-hover" style="object-fit: cover;">
+            </div>
+        </div>
           </div>
       </div>
   </div>
 </section>
  
   
-  <!-- ======= Services Section ======= -->
-  <div class="lower">
-    <video autoplay muted loop id="background-video">
-        <source src="../assets/img/bg.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <div class="overlay"></div>
+  <!-- ======= Services Section ======= -->  
+  <section id="more-services" class="more-services"> 
 
-    <section id="services" class="services">   
-        <div class="container">         
+
+    <img src="../assets/img/banner1.png" alt="">
+
+    <section id="services" class="services ">   
+   <div class="container">         
           <div class="row">
-            <div class="col-md-6 col-lg-4 mb-5">
+            <div class="col-md-6 col-lg-4 mb-5 ">
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-                    <div class="icon"><i class="fa-solid fa-handshake-simple"></i></div>
+                    <div class="icon"><i class="fa-solid fa-handshake-simple "></i></div>
                     <h4 class="title"><a href="">Partners</a></h4>
                     <p class="description">Promote collaboration among stakeholders to drive innovation and growth.</p>
                 </div>
@@ -226,90 +248,100 @@
         </div>
             </div>
         </div>
+  
+  </section>
+
+   
+       
     </section>
 </div>
 
  
 
  <!-- ======= CONSURTIUM ======= -->
- <section id="more-services" class="more-services">
-
-
-  <img src="../assets/img/gallery/media6.jpg" alt="">
-
-  <div class="container ">
-    <div class="row justify-content-center" >
-      <div class="col-xl-10">
-        <div class="text-center">
  
-          <p><strong>ICONS South Luzon</strong> is a diverse and collaborative network of incubators, enablers, and government institutions that drives regional economic growth through sustainable startup development and innovation.</p>
-   
-        </div>
-      </div>
-    </div>
-  </div>
-
-</section>
-
-</div>
-</section>
 <!-- ======= Partners Section ======= -->
 <section id="services" class="services">
 <div class="container" data-aos="fade-up">
+  <div class="container py-5">
+      <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">         
+          <h1 class=" text-sec mb-0">ICONS Consortium</h1>
+          <span class="mb-0"> Consortium</span>
+      </div>
+      <div class="row g-5">
+        
+          <div >
+              <p class="text-head "><strong>ICONS South Luzon</strong>  is a dynamic network of incubators and enablers that supports startup development and spurs innovation in South Luzon. We empower startups and drive regional economic growth through innovative and sustainable solutions.</p>
+             
+              
+             
+          </div>
+            
+      </div>
+  </div>
 
    
   <div class="row gy-5">
 
     <div class="col-xl-4 col-md-6 mt-3" data-aos="zoom-in" data-aos-delay="200">
-      <div class="service-item text-center d-flex align-items-center">
+      <div class="box text-center d-flex align-items-center">
 
-        <div class="img">
-          <img src="../assets/img/consuicon/PrivOrg.png" class="img-fluid" alt="">
+        <div class="box vintage">
+          <img src="../assets/img/consuicon/PrivOrg.png" class="img-fluid" alt="">    
+        
+          <a href="partners.html" title="More Details"><i class=" cons-link bx bx-link"></i></a>         
         </div>
         
       </div>
     </div>
 
     <div class="col-xl-4 col-md-6 mt-3" data-aos="zoom-in" data-aos-delay="300">
-      <div class="service-item text-center d-flex align-items-center" >
-        <div class="img">
+      <div class="box text-center d-flex align-items-center" >
+        <div class="box vintage">
           <img src="../assets/img/consuicon/PCIEERD.png" class="img-fluid" alt="">
+          <a href="partners.html" title="More Details"><i class=" cons-link bx bx-link"></i></a>
+       
         </div>
         
       </div>
     </div>
 
     <div class="col-xl-4 col-md-6 mt-3" data-aos="zoom-in" data-aos-delay="400">
-      <div class="service-item text-center d-flex align-items-center" >
-        <div class="img">
+      <div class="box text-center d-flex align-items-center" >
+        <div class="box vintage">
           <img src="../assets/img/consuicon/PCAARRD.png" class="img-fluid" alt="">
+          <a href="partners.html" title="More Details"><i class=" cons-link bx bx-link"></i></a>
+       
         </div>
        
       </div>
     </div>
 
     <div class="col-xl-4 col-md-6 mt-3" data-aos="zoom-in" data-aos-delay="500">
-      <div class="service-item text-center d-flex align-items-center"  >
-        <div class="img">
+      <div class="box text-center d-flex align-items-center"  >
+        <div class="box vintage">
           <img src="../assets/img/consuicon/Fablabs.png" class="img-fluid" alt="">
+          <a href="partners.html" title="More Details"><i class=" cons-link bx bx-link"></i></a>
         </div>
         
       </div>
     </div>
 
     <div class="col-xl-4 col-md-6 mt-3" data-aos="zoom-in" data-aos-delay="600">
-      <div class="service-item text-center d-flex align-items-center"  >
-        <div class="img">
+      <div class="box text-center d-flex align-items-center"  >
+        <div class="box vintage">
           <img src="../assets/img/consuicon/Academe.png" class="img-fluid" alt="">
+          <a href="partners.html" title="More Details"><i class=" cons-link bx bx-link"></i></a>
         </div>
        
       </div>
     </div>
 
     <div class="col-xl-4 col-md-6 mt-3" data-aos="zoom-in" data-aos-delay="700">
-      <div class="service-item text-center d-flex align-items-center"  >
-        <div class="img">
+      <div class="box text-center d-flex align-items-center"  >
+        <div class="box vintage">
           <img src="../assets/img/consuicon/PrivTbi.png" class="img-fluid" alt="">
+          <a href="partners.html" title="More Details"><i class=" cons-link bx bx-link"></i></a>
         </div>
        
       </div>
@@ -328,19 +360,16 @@
 
 
 
+
 <!-- ======= Testimonials Section ======= -->
 <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">         
   <h1 class=" text-sec mb-0"> Our Activities</h1>
   <span class="mb-0"> Our Activities</span>
 </div>
-<div class="lower">
-  <video autoplay muted loop id="background-video">
-      <source src="../assets/img/bg.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-  </video>
-  <div class="overlay"></div>
-  
 
+
+
+  
   <div class="container">
     <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
       <div class="swiper-wrapper">
@@ -441,7 +470,7 @@
               </div>
           </div>
           <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-              <div class="blog-item bg-white rounded overflow-hidden" style=" box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);">
+            <div class="blog-item rounded overflow-hidden" style="background-color: #001d4f; color: white;box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);">
                   <div class="blog-img position-relative overflow-hidden">
                       <img class="img-fluid" src="../assets/img/posts/2.jpg" alt="">
                       <a class="position-absolute top-0 start-0  rounded-end mt-5 py-2 px-4" href="" style="background-color:#001d4f; color: white;">Article</a>
@@ -451,9 +480,9 @@
                         <small class="me-3 custom-small"><i class="far fa-user  me-2 custom-icon"></i>Jeca Marie</small>
                         <small class="me-3 custom-small"><i class="far fa-calendar-alt  me-2 custom-icon"></i>12, March, 2024</small>
                       </div>
-                      <h4 class=" text-art mb-3">Legal Works for Startups</h4>
-                      <p class="  text-details text-dark ">When launching a business with a co-founder, it's vital to define roles and draft a partnership agreement to ensure alignment and mitigate future conflicts.</p>
-                      <a class=" text-details text-uppercase text-dark" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                      <h4 class=" text-art mb-3 text-white">Legal Works for Startups</h4>
+                      <p class="  text-details text-white ">When launching a business with a co-founder, it's vital to define roles and draft a partnership agreement to ensure alignment and mitigate future conflicts.</p>
+                      <a class=" text-details text-uppercase text-white" href="">Read More <i class="bi bi-arrow-right"></i></a>
                   </div>
               </div>
           </div>
@@ -480,11 +509,11 @@
  </section>     
 
     <!-- ======= Team Section ======= -->
-    <section id="team" class="team section ">
+    <section id="team" class="team section section-bg">
       <div class="container">
 
         <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">         
-          <h1 class=" text-sec mb-0">Team Members</h1>
+          <h1 class=" text-sec mb-0 text-white">Meet our Team Members</h1>
           <span class="mb-0">Team Members</span>
         </div>
 
@@ -605,15 +634,25 @@
 
 <!-- ======= Clients Section ======= -->
 <section id="clients" class="clients clients">
-  <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">         
+  <div class="section-title text-center position-relative pb-3 mb-2 mx-auto" style="max-width: 600px;">         
     <h1 class=" text-sec mb-0">Official Partners</h1>
     <span class="mb-0">Official Partners</span>
   </div>
-  <div data-aos="fade-up">
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-      <div class="container py-5 mb-5">
-        <div class="owl-carousel vendor-carousel">
-          <a href="https://pcieerd.dost.gov.ph/"><img src="../assets/img/logos/dos.png" class="logo"></a>
+
+
+  <!-- Tab content -->
+  <div id="tab-content" data-aos="fade-up">
+    <div class="container-fluid mt-2 py-1 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="scroll-container">
+        <div class="carousel-primary">
+          <a href="https://batstate-u.edu.ph/"><img src="../assets/img/logos/bsul.png" class="logo"></a>
+          <a href="http://cti.batstate-u.edu.ph/"><img src="../assets/img/logos/cti.png" class="logo"></a>
+          <a href="https://agora.uplb.edu.ph/uplb-sibol-fablab"><img src="../assets/img/logos/sibol.png" class="logo"></a>
+          <a href="https://www.brainsparks.ph/"><img src="../assets/img/logos/ulo.png" class="logo"></a>
+          <a href="https://nexus.dlsl.edu.ph/"><img src="../assets/img/logos/nexus.png" class="logo"></a>
+          <a href="https://www.dlsuanimolabs.com/"><img src="../assets/img/logos/animolabs.png" class="logo"></a>
+        </div>
+        <div class="carousel-primary carousel-secondary">
           <a href="https://batstate-u.edu.ph/"><img src="../assets/img/logos/bsul.png" class="logo"></a>
           <a href="http://cti.batstate-u.edu.ph/"><img src="../assets/img/logos/cti.png" class="logo"></a>
           <a href="https://agora.uplb.edu.ph/uplb-sibol-fablab"><img src="../assets/img/logos/sibol.png" class="logo"></a>
@@ -622,13 +661,38 @@
           <a href="https://www.dlsuanimolabs.com/"><img src="../assets/img/logos/animolabs.png" class="logo"></a>
         </div>
       </div>
+      <div class="scroll-container second-scroll-container">
+        <div class="carousel-primary second-carousel-primary">
+          <a href="https://up.edu.ph/"><img src="../assets/img/logos/uplogo.png" class="logo"></a>
+          <a href="https://www.dlsl.edu.ph/"><img src="../assets/img/logos/dlslogo.png" class="logo"></a>
+          <a href="https://akadasia.com/"><img src="../assets/img/logos/akadasialogo.svg" class="logo"></a>
+          <a href="https://asklexph.com/https://asklexph.com/"><img src="../assets/img/logos/asklexlogo.png" class="logo"></a>
+          <a href="https://www.facebook.com/likha.batstateu/"><img src="../assets/img/logos/likhafablogo.jpg" class="logo"></a>
+          <a href="https://www.facebook.com/CvSU.ATBI/"><img src="../assets/img/logos/cvsulogo.png" class="logo"></a>
+        </div>
+        <div class="carousel-primary carousel-secondary second-carousel-secondary">
+          <a href="https://up.edu.ph/"><img src="../assets/img/logos/uplogo.png" class="logo"></a>
+          <a href="https://www.dlsl.edu.ph/"><img src="../assets/img/logos/dlslogo.png" class="logo"></a>
+          <a href="https://akadasia.com/"><img src="../assets/img/logos/akadasialogo.svg" class="logo"></a>
+          <a href="https://asklexph.com/https://asklexph.com/"><img src="../assets/img/logos/asklexlogo.png" class="logo"></a>
+          <a href="https://www.facebook.com/likha.batstateu/"><img src="../assets/img/logos/likhafablogo.jpg" class="logo"></a>
+          <a href="https://www.facebook.com/CvSU.ATBI/"><img src="../assets/img/logos/cvsulogo.png" class="logo"></a>
+        </div>
+      </div>
     </div>
   </div>
+    <!-- Button to link to a tab -->
+   <div class="text-center mt-5 mb-4">
+      <a class="btn btn-partners" href="partners.html">View More</a>
+    </div>
+  
+   
 </section><!-- End Clients Section -->
+
 
 <!-- ======= Footer ======= -->
    
-<div>
+
         <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
             <defs>
                 <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
@@ -664,9 +728,25 @@
             </div>
           </div>
           <div class="col-md-6 map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.913554869138!2d121.07181097485659!3d13.784084486611098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd0ff100000001%3A0x6e553c2c569f211f!2sBatangas%20State%20University-Alangilan%20Campus!5e0!3m2!1sfil!2sph!4v1709682974397!5m2!1sfil!2sph" width="200" height="200" style="border: 9px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.913554869138!2d121.07181097485659!3d13.784084486611098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd0ff100000001%3A0x6e553c2c569f211f!2sBatangas%20State%20University-Alangilan%20Campus!5e0!3m2!1sfil!2sph!4v1709682974397!5m2!1sfil!2sph" width="100%" height="200" style="border: 9px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+        </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="newsletter text-white">
+                  <h5>Subscribe to Our Newsletter</h5>
+                  <form action="#" method="post" class="d-flex">
+                    <input type="email" class="form-control me-2" placeholder="Your email address" aria-label="Your email address">
+                    <button class="btn btn-primary" type="submit"><i class="bi bi-arrow-right-circle-fill"></i></button>
+                  </form>
+                </div>
+              </div>
+             
+           
           </div>
           
+        
         </div>
         <div class="row">
           <div class="col-md-12">
@@ -685,6 +765,7 @@
 <a href="javascript:void(0);" id="rocketmeluncur" class="showrocket" ><i></i></a>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="../assets/lib/wow/wow.js"></script>
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -694,6 +775,7 @@
   <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="../assets/vendor/php-email-form/validate.js"></script>
+  
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>

@@ -1,5 +1,7 @@
+
 (function() {
   "use strict";
+  
 
   document.addEventListener("DOMContentLoaded", function () {
     // Your code to hide the preloader when the content is loaded
@@ -254,6 +256,73 @@
     })
   });
 
-  
+
 
 })()
+//scroll to about//
+function scrollToAbout() {
+  var aboutSection = document.getElementById('about');
+  aboutSection.scrollIntoView({ behavior: 'smooth' });
+}
+//button-learn more-about//
+let button = document.querySelector(".primary-button");
+let item = document.querySelector(".primary-button .round");
+
+button.addEventListener("mouseenter", function(event) {
+  this.classList += " animate";
+
+  let buttonX = event.offsetX;
+  let buttonY = event.offsetY;
+
+  if (buttonY < 24) {
+    item.style.top = 0 + "px";
+  } else if (buttonY > 30) {
+    item.style.top = 48 + "px";
+  }
+
+  item.style.left = buttonX + "px";
+  item.style.width = "1px";
+  item.style.height = "1px";
+});
+
+button.addEventListener("mouseleave", function() {
+  this.classList.remove("animate");
+
+  let buttonX = event.offsetX;
+  let buttonY = event.offsetY;
+
+  if (buttonY < 24) {
+    item.style.top = 0 + "px";
+  } else if (buttonY > 30) {
+    item.style.top = 48 + "px";
+  }
+  item.style.left = buttonX + "px";
+});
+// Initialize Owl Carousel
+$(document).ready(function(){
+  $('.vendor-carousel').owlCarousel({
+    loop: true, // Enable loop
+    margin: 10, // Adjust margin as needed
+    nav: true, // Enable navigation buttons if needed
+    autoplay: true, // Enable autoplay
+    autoplayTimeout: 3000, // Set autoplay interval
+    autoplayHoverPause: true, // Pause autoplay on hover
+    animateOut: 'fadeOut', // Smooth slide-out animation
+    animateIn: 'fadeIn', // Smooth slide-in animation
+    responsive: {
+      0: {
+        items: 1 // Number of items to show on small screens
+      },
+      600: {
+        items: 3 // Number of items to show on medium screens
+      },
+      1000: {
+        items: 8 // Number of items to show on large screens
+      }
+    }
+  });
+});
+
+const btn = document.querySelector("#btn");
+const btnText = document.querySelector("#btnText");
+
