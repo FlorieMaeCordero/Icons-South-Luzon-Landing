@@ -131,34 +131,9 @@
     }
   }, true)
 
-  /**
-   * Scrool with ofset on links with a class name .scrollto
-   */
-  on('click', '.scrollto', function(e) {
-    if (select(this.hash)) {
-      e.preventDefault()
+ 
 
-      let navbar = select('#navbar')
-      if (navbar.classList.contains('navbar-mobile')) {
-        navbar.classList.remove('navbar-mobile')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
-      }
-      scrollto(this.hash)
-    }
-  }, true)
 
-  /**
-   * Scroll with ofset on page load with hash links in the url
-   */
-  window.addEventListener('load', () => {
-    if (window.location.hash) {
-      if (select(window.location.hash)) {
-        scrollto(window.location.hash)
-      }
-    }
-  });
 
   /**
    * Testimonials slider
@@ -264,40 +239,7 @@ function scrollToAbout() {
   var aboutSection = document.getElementById('about');
   aboutSection.scrollIntoView({ behavior: 'smooth' });
 }
-//button-learn more-about//
-let button = document.querySelector(".primary-button");
-let item = document.querySelector(".primary-button .round");
 
-button.addEventListener("mouseenter", function(event) {
-  this.classList += " animate";
-
-  let buttonX = event.offsetX;
-  let buttonY = event.offsetY;
-
-  if (buttonY < 24) {
-    item.style.top = 0 + "px";
-  } else if (buttonY > 30) {
-    item.style.top = 48 + "px";
-  }
-
-  item.style.left = buttonX + "px";
-  item.style.width = "1px";
-  item.style.height = "1px";
-});
-
-button.addEventListener("mouseleave", function() {
-  this.classList.remove("animate");
-
-  let buttonX = event.offsetX;
-  let buttonY = event.offsetY;
-
-  if (buttonY < 24) {
-    item.style.top = 0 + "px";
-  } else if (buttonY > 30) {
-    item.style.top = 48 + "px";
-  }
-  item.style.left = buttonX + "px";
-});
 // Initialize Owl Carousel
 $(document).ready(function(){
   $('.vendor-carousel').owlCarousel({
